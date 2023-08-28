@@ -32,7 +32,7 @@ jobs:
     - name: Create GitHub release
       uses: marvinpinto/action-automatic-releases@latest
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        repo_token: "${{ secrets.MY_SECRET_TOKEN }}"
         automatic_release_tag: ${{ github.event.inputs.release_tag }}
         title: ${{ github.event.inputs.release_tag }}
         prerelease: false
